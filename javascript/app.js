@@ -16,7 +16,20 @@ function encoder() {
 
 
   var outputDecoder = document.getElementById("textDecoder");
-  outputDecoder.innerHTML = `<textarea>${inputDecoder}</textarea>`;
+  outputDecoder.innerHTML = `<textarea id="textArea">${inputDecoder}</textarea>`;
+}
+
+function decoder() {
+  var output = document.querySelector("#textArea").value;
+  var outputDecoder = output
+    .replace(/enter/g, 'e')
+    .replace(/imes/g, 'i')
+    .replace(/ai/g, 'a')
+    .replace(/ober/g, 'o')
+    .replace(/ufat/g, 'u');
+
+  var textDecoder = document.getElementById("textDecoder");
+  textDecoder.innerHTML = `<textarea id="textArea">${outputDecoder}</textarea>`;
 }
 
 
