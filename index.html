@@ -15,14 +15,14 @@
   <main class="content">
     <section>
       <h1 class="content__title">Challenge One</h1>
-      <input class="content__input" type="text" name="" id="">
-      <button class="content__encrypt" type="submit">Criptografar</button>
-      <button class="content__decrypt" type="submit">Descriptografar</button>
+      <input class="content__input" type="text" name="content-input" id="contentInput" placeholder="Digite seu texto">
+      <button class="content__encrypt" onclick="encoder()" type="submit">Criptografar</button>
+      <button class="content__decrypt" onclick="decoder()" type="submit">Descriptografar</button>
     </section>
     <section>
       <div class="content__decrypt__area">
         <img class="content__decrypt__image" src="images/image-search.png" alt="image-person-search">
-        <p class="content__decrypt__message">Texto decodificado aqui.</p>
+        <p class="content__decrypt__message" id="textDecoder">Texto decodificado aqui.</p>
       </div>
     </section>
   </main>
