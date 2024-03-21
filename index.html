@@ -3,27 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="css/style.css"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
   <title>Decodificador</title>
 </head>
 <body>
   <header class="navbar">
     <nav class="navbar__menu">
-      <a class="navbar__menu__link" href="/">Alura</a>
+      <img class="logoAlura" src="images/alura.png" alt="logo-alura">
     </nav>
   </header>
   <main class="content">
     <section>
       <h1 class="content__title">Challenge One</h1>
-      <input class="content__input" type="text" name="content-input" id="contentInput" placeholder="Digite seu texto">
-      <button class="content__encrypt" onclick="encoder()" type="submit">Criptografar</button>
-      <button class="content__decrypt" onclick="decoder()" type="submit">Descriptografar</button>
+      <textarea class="content__input" id="contentInput"  cols="41" rows="4" placeholder="Digite seu texto"></textarea>
+      <div class="buttons">
+        <button class="content__encrypt" onclick="encoder()" type="submit">Criptografar</button>
+        <button class="content__decrypt" onclick="decoder()" type="submit">Descriptografar</button>
+      </div>
     </section>
     <section>
-      <div class="content__decrypt__area">
-        <img class="content__decrypt__image" src="images/image-search.png" alt="image-person-search">
-        <p class="content__decrypt__message" id="textDecoder">Texto decodificado aqui.</p>
-      </div>
+      <textarea class="content__decrypt__message" id="textDecoder" cols="20" rows="10">Texto decodificado aqui.</textarea>
     </section>
   </main>
   <script src="javascript/app.js"></script>

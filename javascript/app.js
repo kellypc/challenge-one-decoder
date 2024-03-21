@@ -16,7 +16,7 @@ function encoder() {
 
 
   var outputDecoder = document.getElementById("textDecoder");
-  outputDecoder.innerHTML = `<textarea id="textArea">${inputDecoder}</textarea>`;
+  outputDecoder.innerHTML = `${inputDecoder}`;
 }
 
 function decoder() {
